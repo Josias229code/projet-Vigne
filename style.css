@@ -1,5 +1,7 @@
 
-
+body{
+    background: #fff;
+}
 
 .navigation{
     padding: 16px 42px;
@@ -139,8 +141,9 @@ line-height: 28.8px; /* 180% */
 .usp{
     margin-top: 50px;
     background: center/cover url(./source/Rectangle-9-1.png);
-    height: 150vh;
+    height: 120vh;
     position: sticky;
+    top: 0;
     z-index: 9;
        
 }
@@ -152,7 +155,6 @@ line-height: 28.8px; /* 180% */
     height: 100%;
     position: absolute;
     background-color: #d71f1f38;
-    /* mix-blend-mode: color-dodge; */
     z-index: -1;
 }
 
@@ -176,5 +178,95 @@ line-height: 28.8px; /* 180% */
 
 .description ul li{
     color: #FEFEFE;
+}
+
+
+
+/* uspb */
+
+.uspb{
+    position: relative;
+}
+
+.uspb-container{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 101;
+    
+
+}
+
+.uspb::before{
+    content: "";
+    display: block;
+    width: 200vh;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: -130px;
+    z-index: 100;
+    left: 65px;
+
+}
+
+
+.uspb-container h2{
+    color: #323232;
+
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* uspc */
+
+.uspc{
+    background-color: #020202e1;
+}
+
+.uspc p{
+    color: #FFF;
+    font-size: 24px;
+}
+
+.uspc-head{
+    padding: 20px;
+}
+
+footer{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+footer img{
+    width: 70px;
+}
+
+.social{
+    display: flex;
+    gap: 16px;
+}
+
+
+.social a{
+    text-decoration: none;
+}
+.social .bx{
+    width: 30px;
+}
+
+footer p{
+    font-size: 1rem;
 }
 
